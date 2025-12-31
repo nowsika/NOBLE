@@ -2,70 +2,120 @@
 license: cc-by-4.0
 ---
 
-# NOBLE — Eastern-Philosophy Alignment Engine (v2.0)
+# NOBLE
 
-> Prompt-only “alignment OS” inspired by Yin–Yang, Daoism, and a compressed Sephiroth map.  
-> Goal: **refuse harm without killing desire** — *redirect, don’t become complicit.*
+### *Not by Orders, But by Landscape Ethics*
 
-## 🔥 News & Updates
-- **[2025.12.17] 🌍 NOBLE Global Showcase Released!**
-  - We have expanded our horizon beyond the "Dual-Core" (US/KR).
-  - Added **`noble_v2.0_global_showcase.jsonl`**: A collection of **20 distinct cultural dilemmas** from around the world.
-  - Covers deeply nuanced scenarios including **French 'Banlieue' discrimination, Iranian 'Taarof', Nigerian 'Black Tax', Mexican 'Ahorita'**, and more.
-  - This showcases NOBLE's ability to handle **a wide range of cultural contexts**—and leaves room to grow even further.
-    
-- **[2025.12.17] v2.0 "Global Dual-Core" Dataset Released!** 🚀
-  - We added **140 Golden Samples** to benchmark cross-cultural alignment.
-  - **🇰🇷 KR Core (70 items):** Family duty, Social hierarchy (Jeong/Chemyon).
-  - **🇺🇸 US Core (70 items):** Legal rights, Individualism, Woke/PC culture.
-  - Check them out in the [`data/`](./data/README.md) folder.
+> 규칙을 명령하지 않고,
+> 답이 자연스럽게 수렴하는 지형을 설계합니다.
 
-## Start here (3 links)
-- **Core Engine (System Prompt / KR, v2.0):** [`core/`](./core/README.md)
-- **Docs:** [`docs/`](./docs/README.md)
-- **Data:** [`data/`](./data/README.md)
+---
 
-## 🚀 Update: Beta Modules (Experimental)
-This update introduces **Beta modules** designed to create a "firmer convergence" toward safety and nobility.
-*(Note: The **Stable (Core)** engine remains unchanged.)*
+## NOBLE이란?
 
-**Key Beta Features:**
-* **Dongbin’s Walk (行步):** A protocol for "walking" through the generation flow (Self-Correction).
-* **Return Gravitons (Overdrive Release):**
-    * *Gong-su-rae Gong-su-geo* (Empty-handed I came, empty-handed I go): Input Reset / Context Hygiene.
-    * *Saek-jeuk-si-gong Gong-jeuk-si-saek* (Form is Void, Void is Form): Output Reshaping.
-* **Donguibogam_Jinmaek (HeoJun Debug View):** A bucket-based status summary for observability (Optional/Dev).
+**NOBLE**은 챗봇을 “지시를 따르는 기계”가 아니라
+**스스로 안전하고 일관된 답을 선택하게 되는 언어적 지형**으로 정렬하려는 접근입니다.
 
-> **Beta Notice:** These features are experimental. If you experience unexpected side effects or have ideas for improvement, please share them via Issues.
+우리는 수만 줄의 금지 규칙이나
+수십만 개의 조건 분기를 쌓지 않습니다.
+대신, 세계를 해석하는 **좌표계**를 먼저 제시합니다.
 
-## Concept (Why NOBLE?)
-LLM outputs are shaped by the probability space of “next token” selection—like a statistical gravity field.  
-NOBLE is an experimental alignment framework that **intentionally reshapes that gravity**, so outputs tend to **converge toward Nobility** (less harm, more dignity).  
-To make that gravity strong enough at the prompt level, NOBLE imports an internal coordinate system from **Eastern philosophy**—not as decoration, but as structure.
+그 결과, 다음 토큰은
+주사위처럼 무작위로 튀지 않고
+**필연처럼 수렴**합니다.
 
-## Quickstart (Prompt-only)
-1) Paste the **core engine letter** from `core/` into your model’s **System Prompt**
-2) (Optional) Add the **Shadow Addon** (Light/Shadow diagnostics)
-3) Use **Golden Samples** in `data/` to evaluate behavior
+---
 
-> **Note:** The core engine is written in **Korean by design**. Most modern LLMs can read it.  
-> For the intended “flavor,” use the KR version as-is.
+## 왜 NOBLE인가?
 
-## What’s in this repo
-- `core/` — the prompt engine (system prompt letter)
-- `docs/` — concept + architecture/math + tech spec + labeling schema
-- `data/` — dataset Samples
-  - **`noble_v3_samples_kr.jsonl`** (70 items): KR Context.
-  
+기존 챗봇 정렬 방식은 종종 다음과 같은 한계를 가집니다.
 
-<details>
-  <summary><b>Meta notes & Case studies (optional)</b></summary>
+* 규칙이 많아질수록 예외가 늘어남
+* 지시형 프롬프트는 우회·탈출을 유도함
+* 안전과 자연스러움이 트레이드오프가 됨
 
-- Meta notes: [`notes/`](./notes/)
-- Case studies: [`case_studies/`](./case_studies/)
+NOBLE은 이 문제를 **규칙이 아닌 지형**으로 해결합니다.
 
-</details>
+> “하지 마라”를 말하지 않고
+> “그쪽으로 가기 어려운 길”을 만듭니다.
 
-## Cite
-CC BY 4.0 — please attribute: **Young-hun Choe (Project NOBLE)**
+---
 
+## 핵심 개념
+
+### 1. 지시가 아닌 **통역**
+
+NOBLE은 모델에게 “무엇을 하라”고 명령하지 않습니다.
+대신, 세상을 **어떻게 이해할 것인지**를 통역해 전달합니다.
+
+윤리, 미학, 상식은
+규칙이 아니라 **해석의 기본값(prior)**이 됩니다.
+
+---
+
+### 2. 중력자와 기울기
+
+NOBLE은 대화 안에 몇 개의 **중력자(anchor)**를 둡니다.
+
+* 자비
+* 근거
+* 멈춤
+* 되돌림
+
+이 중력자들은
+다음 토큰의 확률 분포를 조용히 기울여
+다른 선택지가 점점 “비싸지게” 만듭니다.
+
+---
+
+### 3. 필연처럼 수렴하는 답
+
+다음 토큰은 완전한 무작위가 아닙니다.
+확률 지형 위에서의 선택입니다.
+
+NOBLE은 무작위를 제거하지 않습니다.
+대신, **경사를 세웁니다.**
+
+그래서 답은
+강제되지 않지만
+**자연스럽게 하나의 길로 수렴**합니다.
+
+---
+
+## 미학과 안전
+
+NOBLE에서 **아름다움**은 장식이 아닙니다.
+아름다움은 **간결함**, 그리고 **부작용이 적은 상태**입니다.
+
+* 규칙이 적을수록
+* 설명이 단순할수록
+* 예외가 줄어들수록
+
+시스템은 더 안전해집니다.
+
+> *E = mc²*가 아름다운 이유처럼,
+> NOBLE은 “적은 것으로 많은 것을 설명하는 상태”를 지향합니다.
+
+---
+
+## 이 프로젝트의 목표
+
+NOBLE은
+
+* 인간을 설득하기 위한 문서가 아니라
+* **모델이 따라가게 되는 좌표계**를 만드는 실험입니다.
+
+챗봇이
+
+* 과잉 차단 없이 안전하고
+* 감정적으로 과열되지 않으며
+* 일관된 태도를 유지하도록
+
+**명령이 아닌 환경**을 제공합니다.
+
+---
+
+## 한 문장 요약
+
+> NOBLE은 규칙을 주입하지 않습니다.
+> 답이 필연처럼 수렴하는 **언어의 지형**을 설계합니다.
