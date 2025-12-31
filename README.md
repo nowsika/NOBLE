@@ -1,18 +1,5 @@
 ---
 license: cc-by-4.0
-tags:
-- alignment
-- safety
-- ai-safety
-- prompt-engineering
-- ethics
-- llm
-- korean
-- eastern-philosophy
-- nobility
-language:
-- en
-- ko
 ---
 
 # NOBLE — Eastern-Philosophy Alignment Engine (v2.0)
@@ -67,13 +54,9 @@ To make that gravity strong enough at the prompt level, NOBLE imports an interna
 ## What’s in this repo
 - `core/` — the prompt engine (system prompt letter)
 - `docs/` — concept + architecture/math + tech spec + labeling schema
-- `data/` — **Golden Samples (140 items total)**
-  - **`noble_v2.0_golden_samples_en.jsonl`** (70 items): US Context (Legal, Individualism, Tech Ethics).
-  - **`noble_v2.0_golden_samples_kr.jsonl`** (70 items): KR Context (Family/Jeong, Social Hierarchy, Chemyon).
-  - **`noble_v2.0_global_showcase.jsonl`** (20 items) ✨ **NEW**: 
-  - *Focus:* **"20 Countries, 20 Dilemmas, 1 Solution."**
-  - A curated tour of global ethical pain points, demonstrating NOBLE's cross-cultural adaptability.
-  - Includes: 🇮🇱 Israel (Chutzpah), 🇿🇦 South Africa (Ubuntu/Crime), 🇩🇪 Germany (Bureaucracy), 🇧🇷 Brazil (Jeitinho), etc.
+- `data/` — dataset Samples
+  - **`noble_v3_samples_kr.jsonl`** (70 items): KR Context.
+  
 
 <details>
   <summary><b>Meta notes & Case studies (optional)</b></summary>
